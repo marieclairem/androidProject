@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity"
+    tools:layout_editor_absoluteY="@dimen/layout_editor_absoluteY">
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@+id/linearLayout"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/image_iv"
+                    android:layout_marginTop="@dimen/sandwichImageMarginTop"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/sandwich_picture_content_description"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/sandwichImageHeigh"
+                    android:layout_margin="@dimen/sandwichImageMargin"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/relativeLayout2">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   tools:layout_editor_absoluteX="@dimen/knownAs_layout_editor_absolutex"
+                    android:text="@string/detail_also_known_as_label"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorAccent"
+                    tools:layout_editor_absoluteY="@dimen/knownAs_layout_editor_absolutey" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/also_known_as_label"/>
+                <TextView
+                    android:id="@+id/also_known_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textColor="@color/colorPrimary"
+                    tools:layout_editor_absoluteX="@dimen/knownAs_layout_editor_absolutex"
+                    tools:layout_editor_absoluteY="@dimen/knownAs_layout_editor_absolutey" />
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:id="@+id/linearLayout4"
+                android:layout_width="match_parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_marginTop"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/detail_place_of_origin_label"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorAccent"
+                   tools:layout_editor_absoluteX="@dimen/knownAs_layout_editor_absolutex"
+                  tools:layout_editor_absoluteY="@dimen/knownAs_layout_editor_absolutey" />
+
+                <TextView
+                    android:id="@+id/origin_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    tools:layout_editor_absoluteX="@dimen/knownAs_layout_editor_absolutex"
+                    tools:layout_editor_absoluteY="@dimen/knownAs_layout_editor_absolutey" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/detail_ingredients_label"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="@dimen/knownAs_layout_editor_absolutex"
+                    tools:layout_editor_absoluteY="@dimen/knownAs_layout_editor_absolutey" />
+
+                <TextView
+                    android:id="@+id/ingredients_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textColor="@color/colorPrimary"
+                    tools:layout_editor_absoluteX="@dimen/knownAs_layout_editor_absolutex"
+                    tools:layout_editor_absoluteY="@dimen/knownAs_layout_editor_absolutey" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linearLayout6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/detail_description_label"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="@dimen/knownAs_layout_editor_absolutex"
+                    tools:layout_editor_absoluteY="@dimen/knownAs_layout_editor_absolutey" />
+
+                <TextView
+                    android:id="@+id/description_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAccent"
+                    android:layout_marginStart="@dimen/layout_marginStart"
+                    android:layout_marginLeft="@dimen/layout_marginLeft"
+                    android:layout_marginRight="@dimen/layout_marginRight"
+                    android:layout_marginEnd="@dimen/layout_marginEnd"
+                    android:layout_marginBottom="@dimen/layout_marginBottom"
+                    tools:layout_editor_absoluteX="@dimen/knownAs_layout_editor_absolutex"
+                    tools:layout_editor_absoluteY="@dimen/knownAs_layout_editor_absolutey" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>
