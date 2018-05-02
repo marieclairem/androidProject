@@ -2,7 +2,7 @@
 <resources>
     <dimen name="activity_horizontal_margin">20dp</dimen>
     <dimen name="activity_vertical_margin">20dp</dimen>
-    <dimen name="sandwichImageHeigh">230dp</dimen>
+    <dimen name="sandwichImageHeigh">190dp</dimen>
     <dimen name="sandwichImageMargin">10dp</dimen>
     <dimen name="sandwichImageMarginTop">10dp</dimen>
 
